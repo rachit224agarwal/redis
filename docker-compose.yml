@@ -1,0 +1,26 @@
+services: 
+  redis:
+    image: redis:7-alpine
+    container_name: myredis
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+    
+  mongo:
+    image: mongo:7
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: mydatabase
+    volumes:
+      - mongo-data:/data/db
+
+# This docker-compose file sets up two services: Redis and MongoDB.
+# The Redis service uses the official Redis image and is configured to persist data using a volume.
+# The MongoDB service uses the official MongoDB image and is also configured to persist data using a volume
+volumes:
+  redis-data: 
+  mongo-data:
