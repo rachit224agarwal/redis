@@ -20,6 +20,7 @@ app.get('/banner', async (req, res) => {
 
 app.get('/banner/exists', async (req, res) => {
     const exists = await redis.exists(BANNER_KEY);
+    console.log(`Banner exists: ${exists}`);        // Banner exists: 1
     res.json({ exists: Boolean(exists) });
 });
 
