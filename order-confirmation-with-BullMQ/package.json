@@ -1,0 +1,19 @@
+{
+  "name": "redis-setup",
+  "version": "1.0.0",
+  "main": "api.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/api.js"
+  },
+  "dependencies": {
+    "bullmq" : "^5.4.2",
+    "express" : "^4.18.3",
+    "ioredis" : "^5.4.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
