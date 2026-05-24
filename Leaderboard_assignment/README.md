@@ -49,7 +49,7 @@ curl -X POST http://localhost:3000/post/rachit_194/view
 "Post rachit_194 view count incremented! Total count is 1"
 ```
 
-![Post view counter](./screenshots/post-view.png)
+![Post view counter](./public/post-view.png)
 
 ### 2. Add Score to Leaderboard
 
@@ -82,7 +82,7 @@ curl -X POST http://localhost:3000/leaderboard/score \
 "Score of 8 added for user rachit_194 in the leaderboard!"
 ```
 
-![Add score](./screenshots/add-score.png)
+![Add score](./public/add-score.png)
 
 ### 3. Get Leaderboard
 
@@ -115,7 +115,7 @@ Returns the top users with scores in descending order.
 ]
 ```
 
-![Leaderboard](./screenshots/leaderboard.png)
+![Leaderboard](./public/leaderboard.png)
 
 ### 4. Get User Rank
 
@@ -140,7 +140,7 @@ curl http://localhost:3000/leaderboard/rachit_194/rank
 }
 ```
 
-![User rank](./screenshots/user-rank.png)
+![User rank](./public/user-rank.png)
 
 ## What I Learned
 
@@ -153,15 +153,16 @@ This project helped me understand:
 
 ## Screenshots
 
-Store the API screenshots in a `screenshots` folder inside this project:
+Store the API screenshots in the `public` folder inside this project:
 
 ```bash
 Leaderboard_assignment/
-├── screenshots/
+├── public/
 │   ├── add-score.png
 │   ├── leaderboard.png
 │   ├── post-view.png
-│   └── user-rank.png
+│   ├── user-rank.png
+│   └── user-rank-raunak.png
 ```
 
 ## Run Locally
